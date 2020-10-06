@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://pulamusic.github.io/sp/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pulamusic.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://pulamusic.github.io/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="params"
+                href="https://pulamusic.github.io/params/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sp"
+                href="https://pulamusic.github.io/sp/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://pulamusic.github.io/sp/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pulamusic.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://pulamusic.github.io/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="params"
+                href="https://pulamusic.github.io/params/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sp"
+                href="https://pulamusic.github.io/sp/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://pulamusic.github.io/sp/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pulamusic.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://pulamusic.github.io/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="params"
+                href="https://pulamusic.github.io/params/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sp"
+                href="https://pulamusic.github.io/sp/tags/"
+                />
+  </url>
+  
+</urlset>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://pulamusic.github.io/portfolio/work1/</loc>
+    <lastmod>2020-10-06T18:10:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pulamusic.github.io/portfolio/work2/</loc>
+    <lastmod>2020-10-06T18:10:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pulamusic.github.io/portfolio/work3/</loc>
+    <lastmod>2020-10-06T18:10:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pulamusic.github.io/portfolio/work4/</loc>
+    <lastmod>2020-10-06T18:10:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pulamusic.github.io/portfolio/work5/</loc>
+    <lastmod>2020-10-06T18:10:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pulamusic.github.io/portfolio/work6/</loc>
+    <lastmod>2020-10-06T18:10:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pulamusic.github.io/about/</loc>
+    <lastmod>2020-10-06T18:10:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pulamusic.github.io/contact/</loc>
+    <lastmod>2020-10-06T18:10:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pulamusic.github.io/</loc>
+    <lastmod>2020-10-06T18:10:13-04:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://pulamusic.github.io/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sp"
+                href="https://pulamusic.github.io/sp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="params"
+                href="https://pulamusic.github.io/params/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pulamusic.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://pulamusic.github.io/portfolio/</loc>
+    <lastmod>2020-10-06T18:10:13-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://pulamusic.github.io/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://pulamusic.github.io/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sp"
+                href="https://pulamusic.github.io/sp/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="params"
+                href="https://pulamusic.github.io/params/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pulamusic.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://pulamusic.github.io/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://pulamusic.github.io/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sp"
+                href="https://pulamusic.github.io/sp/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="params"
+                href="https://pulamusic.github.io/params/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://pulamusic.github.io/tags/"
+                />
+  </url>
+  
+</urlset>

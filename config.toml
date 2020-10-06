@@ -3,7 +3,7 @@
 
 # NOTE: Change the baseURL as soon as I finish configuring the AWS bucket.
 
-baseURL = "<baseURL here>"
+baseURL = "https://pulamusic.github.io/"
 
 # Th publishDir line was necessary if I was going to deploy the site on GitHub Pages.
 # In fact, I did try to deploy the site on GitHub Pages, and it was a clusterfuck.
@@ -130,7 +130,7 @@ paginate = 15
     # URL = "gs://<Bucket Name>?prefix=a/subfolder/"
 
     # If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
-    cloudFrontDistributionID = <ID>
+    cloudFrontDistributionID = "<ID>"
 
     # Optionally, you can include or exclude specific files.
     # See https://godoc.org/github.com/gobwas/glob#Glob for the glob pattern syntax.
@@ -176,7 +176,7 @@ paginate = 15
     weight = 2
     [languages.sp.params]
       linkedin = "https://linkedin.com/sp/whoever"
-      [languages..params.navigation]
+      [languages.params.navigation]
         help = "Ayuda"
   [languages.fr]
     title = "James Carroll | Concepteur P&#233;dagogique"
