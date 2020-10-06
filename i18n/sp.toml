@@ -1,0 +1,4 @@
+# NOTE: This is just dummy code to quiet the error messages when I run `hugo server --verbose`
+# Delete or comment out this code as soon as I finish configuring the translations.
+[wordCount]
+  other = "{{ .WordCount }} words"

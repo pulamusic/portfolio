@@ -1,14 +1,26 @@
-baseURL = "https://pulamusic.github.io/"
-publishDir = "docs"
+# Site created by Jim Carroll (https://github.com/pulamusic/pulamusic.github.io) using the Hugo static site generator (https://gohugo.io/)
+# The site was adapted from the Creative Portfolio theme (https://github.com/kishaningithub/hugo-creative-portfolio-theme) designed and developed by Kishan B (https://kishaningithub.github.io/)
+
+# NOTE: Change the baseURL as soon as I finish configuring the AWS bucket.
+
+baseURL = "<baseURL here>"
+
+# Th publishDir line was necessary if I was going to deploy the site on GitHub Pages.
+# In fact, I did try to deploy the site on GitHub Pages, and it was a clusterfuck.
+# There is something about Jekyll being the default method of deploying a static site created and endless loop of the site loading and loading and loading...
+# A clusterfuck.
+# publishDir = "docs"
+
 languageCode = "en-us"
 theme = "hugo-creative-portfolio-theme"
-
 title = "James Carroll | Instructional Designer"
-tags = ["portfolio", "instructional design", "academic", "higher education", "learning management system", "lms"]
+tags = ["portfolio", "instructional design", "academic", "education", "higher education", "learning management system", "lms", "web design", "web development"]
+
 # Once I have deployed the site on GitHub Pages, register the url with Disqus in order to get a unique shortname
-disqusShortname = ""
+disqusShortname = "<shortname here>"
+
 # Also after deploying the site, register with Google Analytics
-googleAnalytics = ""
+googleAnalytics = "<GoogleAnalytics info here>"
 
 # Make sure to add a link to emoji documentation (see readme notes)
 enableEmoji = true
@@ -21,18 +33,15 @@ paginate = 15
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
-
-  # NOTE: I'm not sure if this is all I need to do to create custom css
   style = "violet"
-
-  # static/css/custom.css
-
   description = "An Instructional Design Portfolio"
   copyright = "&copy; 2020 pulamusic"
+  DefaultContentLanguage = "en"
   sidebarAbout = [
     "I am an Instructional Designer, Academic, and Musician living in Massachusetts. I am an experienced and creative educator who has been producing Learning Management System websites, curricula, and materials for nearly 20 years."
   ]
-  # Contact page
+
+  # NOTE: Setting up the contact page
      # Since this template is static, the contact form uses www.formspree.io as a
      # proxy. The form makes a POST request to their servers to send the actual
      # email. Visitors can send up to a 1000 emails each month for free.
@@ -46,9 +55,8 @@ paginate = 15
      # - you're done. Happy mailing!
 
   email = "jim@pulamusic.com"
-  # I don't know how I will use this alternate email with the site, but here it is anyway
-  emailAlt = "pulamusic@gmail.com"
 
+# NOTE: Setting up and alternative to Google Analytics
 # An alternative to Google Analytics. Just think about it.
     # Optional Matomo analytics (formerly piwik)
       # [params.analytics.matomo]
@@ -61,42 +69,133 @@ paginate = 15
 
   # Nav links in the side bar
   [[params.navlinks]]
-  name = "Home"
-  url = "portfolio/"
-  home = true
+    name = "Home"
+    url = "portfolio/"
+    home = true
 
   [[params.navlinks]]
-  name = "About"
-  url = "about/"
+    name = "About"
+    url = "about/"
 
   [[params.navlinks]]
-  name = "Get in touch"
-  url = "contact/"
+    name = "Get in touch"
+    url = "contact/"
 
   # Social media links
   [params.social]
-  # facebook      = "full page or profile url in facebook"
+    # facebook      = "full page or profile url in facebook"
 
-  # QUESTIONS: Is it redundant to include an email link here? Is it secure?
-  email         = "jim@pulamusic.com"
-  twitter       = "https://twitter.com/pulamusic"
-  linkedin      = "https://www.linkedin.com/in/james-carroll-36001511a/"
-  academia      = "https://jimcarroll.academia.edu/"
-  # stackoverflow = "full profile url in stackoverflow"
-  # instagram     = "full profile url in instagram"
-  github        = "https://github.com/pulamusic"
-  # youtube       = "full profile url in youtube"
-  # whatsapp      = "wa.me service link"
+    # QUESTIONS: Is it redundant to include an email link here? Is it secure?
+    email         = "jim@pulamusic.com"
+    twitter       = "https://twitter.com/pulamusic"
+    linkedin      = "https://www.linkedin.com/in/james-carroll-36001511a/"
+    academia      = "https://jimcarroll.academia.edu/"
+    # stackoverflow = "full profile url in stackoverflow"
+    # instagram     = "full profile url in instagram"
+    github        = "https://github.com/pulamusic"
+    # youtube       = "full profile url in youtube"
+    # whatsapp      = "wa.me service link"
+
+    DefaultContentLanguage = "en"
+    copyright = "&copy; 2020 pulamusic"
+
+  [params.navigation]
+    help = "Help"
+
+# ****REALLY FUCKING IMPORTANT****
+# This entire section needs to be set up according to the requirements of AWS S3 site deployment
+# Again, and I can't stress this enough, ****REALLY FUCKING IMPORTANT****
+[deployment]
+  # By default, files are uploaded in an arbitrary order.
+  # Files that match the regular expressions in the "Order" list
+  # will be uploaded first, in the listed order.
+  order = [".jpg$", ".gif$"]
+
+
+  [[deployment.targets]]
+    # An arbitrary name for this target.
+    name = "mydeployment"
+    # The Go Cloud Development Kit URL to deploy to. Examples:
+    # GCS; see https://gocloud.dev/howto/blob/#gcs
+    # URL = "gs://<Bucket Name>"
+
+    # S3; see https://gocloud.dev/howto/blob/#s3
+    # For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+    # URL = "s3://<Bucket Name>?region=<AWS region>"
+
+    # Azure Blob Storage; see https://gocloud.dev/howto/blob/#azure
+    # URL = "azblob://$web"
+
+    # You can use a "prefix=" query parameter to target a subfolder of the bucket:
+    # URL = "gs://<Bucket Name>?prefix=a/subfolder/"
+
+    # If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
+    cloudFrontDistributionID = <ID>
+
+    # Optionally, you can include or exclude specific files.
+    # See https://godoc.org/github.com/gobwas/glob#Glob for the glob pattern syntax.
+    # If non-empty, the pattern is matched against the local path.
+    # All paths are matched against in their filepath.ToSlash form.
+    # If exclude is non-empty, and a local or remote file's path matches it, that file is not synced.
+    # If include is non-empty, and a local or remote file's path does not match it, that file is not synced.
+    # As a result, local files that don't pass the include/exclude filters are not uploaded to remote,
+    # and remote files that don't pass the include/exclude filters are not deleted.
+    # include = "**.html" # would only include files with ".html" suffix
+    # exclude = "**.{jpg, png}" # would exclude files with ".jpg" or ".png" suffix
+
+
+  # [[deployment.matchers]] configure behavior for files that match the Pattern.
+  # Samples:
+
+  [[deployment.matchers]]
+    #  Cache static assets for 1 year.
+    pattern = "^.+\\.(js|css|svg|ttf)$"
+    cacheControl = "max-age=31536000, no-transform, public"
+    gzip = true
+
+  [[deployment.matchers]]
+    pattern = "^.+\\.(png|jpg)$"
+    cacheControl = "max-age=31536000, no-transform, public"
+    gzip = false
+
+  [[deployment.matchers]]
+    pattern = "^.+\\.(html|xml|json)$"
+    gzip = true
+
+# ****REALLY FUCKING IMPORTANT****
+# Finish configuring my site for multiple translations
+[languages]
+  [languages.en]
+    title = "James Carroll | Instructional Designer"
+    weight = 1
+    [languages.en.params]
+      # Add these LinkedIn URLs only when and if I deploy my LinkedIn profile in multiple languages
+      linkedin = "https://www.linkedin.com/in/james-carroll-36001511a/"
+  [languages.sp]
+    title = "James Carroll | Dise&#241;o Instruccional"
+    weight = 2
+    [languages.sp.params]
+      linkedin = "https://linkedin.com/sp/whoever"
+      [languages..params.navigation]
+        help = "Ayuda"
+  [languages.fr]
+    title = "James Carroll | Concepteur P&#233;dagogique"
+    weight = 2
+    [languages.fr.params]
+      linkedin = "https://linkedin.com/fr/whoever"
+      [languages.fr.params.navigation]
+        help = "Aide"
+
 
 # Info for blog post front matter
 [frontmatter]
-date = ["date", "publishDate", "lastmod"]
-lastmod = [":git", "lastmod", "date", "publishDate"]
-publishDate = ["publishDate", "date"]
-# Is expiryDate necessary?
-expiryDate = ["expiryDate"]
+  date = ["date", "publishDate", "lastmod"]
+  lastmod = [":git", "lastmod", "date", "publishDate"]
+  publishDate = ["publishDate", "date"]
+  # Is expiryDate necessary?
+  expiryDate = ["expiryDate"]
 
-# Markup settings
+# Markup settings. I don't anticipate having to tweak these, but you never know.
 [markup]
   defaultMarkdownHandler = "goldmark"
   [markup.asciidocExt]
