@@ -1,10 +1,10 @@
 +++
-showonlyimage = true
+showonlyimage = false
 draft = false
 image = "img/portfolio/unsplashImg2.jpg"
 date = "2020-10-07T07:59:00-04:00"
 title = "Dummy page 2"
-weight = 0
+weight = 2
 +++
 
 Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
