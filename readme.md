@@ -14,6 +14,9 @@ Figure out how I'm supposed to link the `static/custom.css` file to the header o
 Is there a way to use Google Fonts with this site?
 
 Check out [goldmark](https://github.com/yuin/goldmark/), the Markdown handler for Hugo.
+* Also check out [this documentation for setting up the Chroma syntax highlighter](https://gohugo.io/getting-started/configuration-markup#highlight).
+* The default style for the highlighter is `monokai`. If I want to change the style, check out [this gallery of Chroma styles](https://xyproto.github.io/splash/docs/longer/all.html) as well as [this page on the configuration of syntax highlighting](https://gohugo.io/content-management/syntax-highlighting/).
+* Think about the benefits and challenges of [installing goldmark](go get github.com/yuin/goldmark) for use in other sites and pages.
 
 I've enabled the use of emoticons(see `config.toml`). Here is a link to an [Emoji Cheat Sheet](https://www.webfx.com/tools/emoji-cheat-sheet/).
 
