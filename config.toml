@@ -29,7 +29,7 @@ paginate = 15
   description = "An Instructional Design Portfolio"
   copyright = "&copy; 2020 pulamusic"
   sidebarAbout = [
-    "I am an Instructional Designer, Academic, and Musician living in Massachusetts. I am an experienced and creative educator who has been producing Learning Management System websites and materials for nearly 20 years."
+    "I am an Instructional Designer, Academic, and Musician living in Massachusetts. I am an experienced and creative educator who has been producing Learning Management System websites, curricula, and materials for nearly 20 years."
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
@@ -43,6 +43,7 @@ paginate = 15
      # - send a dummy email yourself to confirm your account
      # - click the confirm link in the email from www.formspree.io
      # - you're done. Happy mailing!
+
   email = "jim@pulamusic.com"
   # I don't know how I will use this alternate email with the site, but here it is anyway
   emailAlt = "pulamusic@gmail.com"

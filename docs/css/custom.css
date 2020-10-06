@@ -1,5 +1,7 @@
+/* your styles go here */
+
 /*
-  NOTE: This file is not in use. Once I sort out the site's setup, just purge it.
+  FUCK! When I add custom CSS to the theme it then overrides all of the other styling elements, falling back on standard Bootstrap styles.
 */
 
 /*Color Scheme info from coolors.co*/
@@ -13,7 +15,19 @@
 body {
   background-color: #f5f5f5ff;
   color: #333333ff;
+  font-family: "Open Sans Condensed", "Roboto Condensed", sans-serif;
 }
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* I want Roboto Condensed for titles, and Open Sans Condensed for text*/
+
+/*
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
 
 /*
   - Change the color and behavior of links
