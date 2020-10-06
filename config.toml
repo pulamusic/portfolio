@@ -1,4 +1,4 @@
-baseURL = "https://pulamusic.github.io/"
+baseURL = ""
 publishDir = "docs"
 languageCode = "en-us"
 theme = "hugo-creative-portfolio-theme"

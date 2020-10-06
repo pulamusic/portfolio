@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Get in touch on James Carroll | Instructional Designer</title>
-    <link>https://pulamusic.github.io/contact/</link>
+    <link>/contact/</link>
     <description>Recent content in Get in touch on James Carroll | Instructional Designer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Oct 2020 07:59:00 -0400</lastBuildDate><atom:link href="https://pulamusic.github.io/contact/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Oct 2020 07:59:00 -0400</lastBuildDate><atom:link href="/contact/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
