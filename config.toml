@@ -1,6 +1,8 @@
 baseURL = "https://pulamusic.github.io/portfolio/"
+publishDir = "docs"
 languageCode = "en-us"
 theme = "hugo-creative-portfolio-theme"
+
 title = "James Carroll | Instructional Designer"
 tags = ["portfolio", "instructional design", "academic", "higher education", "learning management system", "lms"]
 # Once I have deployed the site on GitHub Pages, register the url with Disqus in order to get a unique shortname
