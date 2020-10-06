@@ -1,8 +1,14 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
+theme = "hugo-creative-portfolio-theme"
 title = "James Carroll | Instructional Designer"
-disqusShortname = "my-site-shortname"
+tags = ["portfolio", "instructional design", "academic", "higher education", "learning management system", "lms"]
+# Once I have deployed the site on GitHub Pages, register the url with Disqus in order to get a unique shortname
+disqusShortname = ""
+# Also after deploying the site, register with Google Analytics
 googleAnalytics = ""
+
+# Make sure to add a link to emoji documentation (see readme notes)
 enableEmoji = true
 enableGitInfo = true
 newContentEditor = "atom"
@@ -12,12 +18,16 @@ paginate = 15
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
-  style = "default"
-  description = "Describe your website"
+
+  # NOTE: I'm not sure if this is all I need to do to create custom css
+  style = "violet"
+
+  # static/css/custom.css
+
+  description = "An Instructional Design Portfolio"
   copyright = "&copy; 2020 pulamusic"
   sidebarAbout = [
-    "I am an Instructional Designer, Academic, and Musician living in Massachusetts. I am an experienced and creative educator who has been producing Learning Management System websites and materials for nearly 20 years.",
-    "Originally from Toronto, currently based in London."
+    "I am an Instructional Designer, Academic, and Musician living in Massachusetts. I am an experienced and creative educator who has been producing Learning Management System websites and materials for nearly 20 years."
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
@@ -32,7 +42,10 @@ paginate = 15
      # - click the confirm link in the email from www.formspree.io
      # - you're done. Happy mailing!
   email = "jim@pulamusic.com"
+  # I don't know how I will use this alternate email with the site, but here it is anyway
+  emailAlt = "pulamusic@gmail.com"
 
+# An alternative to Google Analytics. Just think about it.
     # Optional Matomo analytics (formerly piwik)
       # [params.analytics.matomo]
       #  URL = "https://stats.example.com"
@@ -56,8 +69,11 @@ paginate = 15
   name = "Get in touch"
   url = "contact/"
 
+  # Social media links
   [params.social]
   # facebook      = "full page or profile url in facebook"
+
+  # QUESTIONS: Is it redundant to include an email link here? Is it secure?
   email         = "jim@pulamusic.com"
   twitter       = "https://twitter.com/pulamusic"
   linkedin      = "https://www.linkedin.com/in/james-carroll-36001511a/"
@@ -68,11 +84,12 @@ paginate = 15
   # youtube       = "full profile url in youtube"
   # whatsapp      = "wa.me service link"
 
-# Front matter for a blog post
+# Info for blog post front matter
 [frontmatter]
 date = ["date", "publishDate", "lastmod"]
 lastmod = [":git", "lastmod", "date", "publishDate"]
 publishDate = ["publishDate", "date"]
+# Is expiryDate necessary?
 expiryDate = ["expiryDate"]
 
 # Markup settings
