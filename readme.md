@@ -14,6 +14,8 @@ This is a simple portfolio I am constructing in order to market my skills as an 
 
 ##### Notes to Self
 
+~~##### Goddamnit! I deployed the site successfully, but the url is fucked up: https://pulamusic.github.io/portfolio/portfolio/. Fix this.~~ **Got it**
+
 Figure out how I'm supposed to link the `static/custom.css` file to the header of the theme. It's not clear in the theme's documentation.
 * [This article](https://mattmayes.com/posts/2019/hugo-add-custom-css-properly/) might help.
 
