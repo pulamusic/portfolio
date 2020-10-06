@@ -1,5 +1,4 @@
 > Jim Carroll |
-> jim@pulamusic.com |
 > 10/07/2020 |
 > [GitHub Profile](https://github.com/pulamusic)
 
