@@ -13,6 +13,7 @@ googleAnalytics = ""
 # Make sure to add a link to emoji documentation (see readme notes)
 enableEmoji = true
 enableGitInfo = true
+disableAliases = true
 newContentEditor = "atom"
 paginate = 15
 
