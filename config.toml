@@ -1,7 +1,9 @@
 # Site created by Jim Carroll (https://github.com/pulamusic/pulamusic.github.io) using the Hugo static site generator (https://gohugo.io/)
 # The site was adapted from the Creative Portfolio theme (https://github.com/kishaningithub/hugo-creative-portfolio-theme) designed and developed by Kishan B (https://kishaningithub.github.io/)
 
+# ===========================
 # NOTE: Change the baseURL as soon as I finish configuring the AWS bucket.
+# ===========================
 
 baseURL = "https://pulamusic.github.io/"
 
@@ -104,6 +106,7 @@ paginate = 15
 
 # ****REALLY FUCKING IMPORTANT****
 # This entire section needs to be set up according to the requirements of AWS S3 site deployment
+# Hugo documentation: https://gohugo.io/hosting-and-deployment/hugo-deploy/#configure-the-deployment
 # Again, and I can't stress this enough, ****REALLY FUCKING IMPORTANT****
 [deployment]
   # By default, files are uploaded in an arbitrary order.
