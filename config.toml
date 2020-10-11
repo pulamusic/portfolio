@@ -7,9 +7,9 @@
 
 baseURL = "https://pulamusic.github.io/"
 
-# Th publishDir line was necessary if I was going to deploy the site on GitHub Pages.
+# The publishDir line was necessary if I was going to deploy the site on GitHub Pages.
 # In fact, I did try to deploy the site on GitHub Pages, and it was a clusterfuck.
-# There is something about Jekyll being the default method of deploying a static site created and endless loop of the site loading and loading and loading...
+# There is something about Jekyll being the default method of deploying a static site that created an endless loop of the site loading and loading and loading...
 # A clusterfuck.
 # publishDir = "docs"
 
@@ -88,7 +88,8 @@ paginate = 15
     # facebook      = "full page or profile url in facebook"
 
     # QUESTIONS: Is it redundant to include an email link here? Is it secure?
-    email         = "jim@pulamusic.com"
+    # email         = "jim@pulamusic.com"
+    facebook      = "https://www.facebook.com/PulaBlog-105375687956509"
     twitter       = "https://twitter.com/pulamusic"
     linkedin      = "https://www.linkedin.com/in/james-carroll-36001511a/"
     academia      = "https://jimcarroll.academia.edu/"

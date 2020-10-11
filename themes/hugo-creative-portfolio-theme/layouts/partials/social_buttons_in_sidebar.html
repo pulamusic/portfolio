@@ -2,11 +2,7 @@
   {{ with .Site.Params.social.facebook }}
   <a href="{{ . }}" data-animate-hover="pulse" class="external facebook">
     <i class="fa fa-facebook"></i>
-  </a>
-  {{end}}
-  {{ with .Site.Params.social.googleplus }}
-  <a href="{{ . }}" data-animate-hover="pulse" class="external gplus">
-    <i class="fa fa-google-plus"></i>
+    
   </a>
   {{end}}
   {{ with .Site.Params.social.twitter }}
@@ -14,24 +10,9 @@
     <i class="fa fa-twitter"></i>
   </a>
   {{end}}
-  {{ with .Site.Params.social.instagram }}
-  <a href="{{ . }}" title="" class="external instagram">
-    <i class="fa fa-instagram"></i>
-  </a>
-  {{end}}
-  {{ with .Site.Params.social.email }}
-  <a href="mailto:{{ . }}" data-animate-hover="pulse" class="email">
-    <i class="fa fa-envelope"></i>
-  </a>
-  {{end}}
   {{ with .Site.Params.social.linkedin }}
   <a href="{{ . }}" data-animate-hover="pulse" class="external">
     <i class="fa fa-linkedin"></i>
-  </a>
-  {{end}}
-  {{ with .Site.Params.social.stackoverflow }}
-  <a href="{{ . }}" data-animate-hover="pulse" class="external">
-    <i class="fa fa-stack-overflow"></i>
   </a>
   {{end}}
   {{ with .Site.Params.social.github }}
@@ -39,14 +20,110 @@
     <i class="fa fa-github"></i>
   </a>
   {{end}}
-  {{ with .Site.Params.social.youtube }}
-  <a href="{{ . }}" data-animate-hover="pulse" class="external">
-    <i class="fa fa-youtube"></i>
-  </a>
-  {{end}}
-  {{ with .Site.Params.social.whatsapp }}
-  <a href="{{ . }}" data-animate-hover="pulse" class="external">
-    <i class="fa fa-whatsapp"></i>
+  {{ with .Site.Params.social.academia }}
+  <a href="{{ . }}" target="_blank">
+    <i class="fas fa-book-open"></i>
   </a>
   {{end}}
 </p>
+
+<!-- Tooltips
+
+Code from: https://www.w3schools.com/howto/howto_css_tooltip.asp
+Also look at: https://www.w3schools.com/css/css_tooltip.asp
+
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */ /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Position tooltip over the link with an arrow at the bottom */
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* For fade-in effect */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+ -->
